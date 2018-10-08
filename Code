@@ -1,0 +1,94 @@
+int Red1 = 12;
+int Green1 = 11;
+int Blue1 = 10;
+int Yellow1 = 9;
+int Red2 = 8;    //This selects which DIGITAL number on the arduino will get power and
+int Green2 = 7;  //gives a name. Below when I have "Red1" that just translates to
+int Blue2= 6;    //DIGITAL 12.
+int Yellow2 = 5;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(Red1, OUTPUT);
+  pinMode(Green1, OUTPUT);
+  pinMode(Blue1, OUTPUT);
+  pinMode(Yellow1, OUTPUT); // I learned the importance of setting outputs on this project,
+  pinMode(Red2, OUTPUT);    // if you don't the LEDs will be very dim and act strange.
+  pinMode(Green2, OUTPUT);
+  pinMode(Blue2, OUTPUT);
+  pinMode(Yellow2, OUTPUT);
+}
+\ 
+void loop() {
+  // put your main code here, to run repeatedly:
+
+delay(70);                  // The delay just sets the amount of time in milliseconds before it goes to
+  digitalWrite(Red1, HIGH); // the set below.
+  digitalWrite(Green1, HIGH);
+  digitalWrite(Blue1, HIGH);
+  digitalWrite(Yellow1, LOW);
+  digitalWrite(Red2, LOW);   //I kept three LEDs on at all times and they just cycle
+  digitalWrite(Green2, LOW); // down until it goes back to where it started and then loops.
+  digitalWrite(Blue2, LOW);
+  digitalWrite(Yellow2, LOW);
+
+delay(70);
+  digitalWrite(Red1, LOW);
+  digitalWrite(Green1, HIGH);
+  digitalWrite(Blue1, HIGH);
+  digitalWrite(Yellow1, HIGH);
+  digitalWrite(Red2, LOW);
+  digitalWrite(Green2, LOW);
+  digitalWrite(Blue2, LOW);
+  digitalWrite(Yellow2, LOW);
+
+delay(70);
+  digitalWrite(Red1, LOW);
+  digitalWrite(Green1, LOW);
+  digitalWrite(Blue1, HIGH);
+  digitalWrite(Yellow1, HIGH);
+  digitalWrite(Red2, HIGH);
+  digitalWrite(Green2, LOW);
+  digitalWrite(Blue2, LOW);
+  digitalWrite(Yellow2, LOW);
+
+delay(70);
+  digitalWrite(Red1, LOW);
+  digitalWrite(Green1, LOW);
+  digitalWrite(Blue1, LOW);
+  digitalWrite(Yellow1, HIGH);
+  digitalWrite(Red2, HIGH);
+  digitalWrite(Green2, HIGH);
+  digitalWrite(Blue2, LOW);
+  digitalWrite(Yellow2, LOW);
+
+delay(70);
+  digitalWrite(Red1, LOW);
+  digitalWrite(Green1, LOW);
+  digitalWrite(Blue1, LOW);
+  digitalWrite(Yellow1, LOW);
+  digitalWrite(Red2, LOW);
+  digitalWrite(Green2, HIGH);
+  digitalWrite(Blue2, HIGH);
+  digitalWrite(Yellow2, HIGH);
+
+delay(70);
+  digitalWrite(Red1, HIGH);
+  digitalWrite(Green1, LOW);
+  digitalWrite(Blue1, LOW);
+  digitalWrite(Yellow1, LOW);
+  digitalWrite(Red2, LOW);
+  digitalWrite(Green2, LOW);
+  digitalWrite(Blue2, HIGH);
+  digitalWrite(Yellow2, HIGH);
+
+delay(70);
+  digitalWrite(Red1, HIGH);
+  digitalWrite(Green1, HIGH);
+  digitalWrite(Blue1, LOW);
+  digitalWrite(Yellow1, LOW);
+  digitalWrite(Red2, LOW);
+  digitalWrite(Green2, LOW);
+  digitalWrite(Blue2, LOW);
+  digitalWrite(Yellow2, HIGH);
+}
